@@ -1,0 +1,106 @@
+
+p {
+    color:white;
+    padding: 0;
+    margin :0
+}
+.App {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.dataset-choice {
+    width: 500px;
+    border: 1px solid rgba(178, 178, 178, 0.4);
+    border-radius: 5px;
+    background-color: #151313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-dataset {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.button {
+    background-color: #007dce;
+    color:white;
+    font-size:25px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.button:hover {
+    background-color: #0189e1;;
+}
+
+
+.create-model {
+    padding :50px;
+    border: 1px solid rgba(178, 178, 178, 0.4);
+    border-radius: 5px;
+    background-color: #151313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+    background-color: rgba(0, 0, 0, 0.43);
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results > p {
+    font-size: 30px;
+}
